@@ -6,13 +6,13 @@ public class coinChanger {
 
         ArrayList<Integer> listOfCoins = new ArrayList<>();
 
-        while(number > 0) {
+        while  (number > 0) {
             if (number >= 50 ) {
                 System.out.println("number - 50");
                 listOfCoins.add(50);
                 number -= 50;
                 System.out.println(listOfCoins);
-
+                System.out.println(number);
             }
             while (number >= 20) {
                 System.out.println("number - 20");
@@ -21,8 +21,14 @@ public class coinChanger {
                 System.out.println(listOfCoins);
                 System.out.println(number);
             }
+            while (number >= 10) {
+                System.out.println("number - 10");
+                listOfCoins.add(10);
+                number -= 10;
+                System.out.println(listOfCoins);
+                System.out.println(number);
+            }
         }
-        System.out.println(number);
         return listOfCoins.size();
     }
 }
